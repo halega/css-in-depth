@@ -4,7 +4,11 @@ body {
 }
 
 .slogan {
+    /* Evaluates to 19.2 px = 16 * 1.2 */
     font-size: 1.2em;
+    /* Evaluates to 23.04 px = 19.2 * 1.2 */
+    padding: 1.2em; 
+    background-color: #ccc;
 }
 
 /* a:link {
