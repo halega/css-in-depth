@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Listing 2.13</title>
+    <style>
+        :root {
+            font-size: calc(0.5em + 1vw);
+        }
+
+        .panel {
+            font-size: 1rem;
+            font-family: sans-serif;
+            border: 2px solid #999;
+            border-radius: 0.5em;
+            padding: 1em;
+        }
+
+        .panel > h2 {
+            margin-top: 0;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .panel.large {
+            font-size: 1.2rem;
+        }
+
+        .measure {
+            width: 1vw;
+            height: 1vw;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <h2>Single-origin</h2>
+        <div class="panel-body">We have built partnerships with small farms arund the world to hand-select
+            beans at the peak of season. We then carefully roast in <a href="#">small batches</a>
+            to maximize their potential.
+        </div>
+    </div>
+    <div class="panel large">
+        <h2>Single-origin</h2>
+        <div class="panel-body">We have built partnerships with small farms arund the world to hand-select
+            beans at the peak of season. We then carefully roast in <a href="#">small batches</a>
+            to maximize their potential.
+        </div>
+    </div>
+
+    <div class="measure"></div>
+</body>
+
+</html>
