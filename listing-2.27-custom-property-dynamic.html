@@ -68,10 +68,14 @@
     </aside>
 
     <script type="text/javascript">
+        // get a custom property value in JavaScript
         let rootElement = document.documentElement;
         let styles = getComputedStyle(rootElement);
         let mainColor = styles.getPropertyValue("--main-bg");
+        
+        // set a custom property in JavaScript
         console.log(String(mainColor).trim());
+        rootElement.style.setProperty("--main-bg", "#cdf");
     </script>
 </body>
 
