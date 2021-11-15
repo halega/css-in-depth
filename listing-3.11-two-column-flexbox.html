@@ -19,6 +19,10 @@
             font-family: Helvetica, Arial, sans-serif;
         }
 
+        body * + * {
+            margin-top: 1.5em;
+        }
+
         header {
             padding: 1em 1.5em;
             color: #fff;
@@ -37,12 +41,14 @@
 
         .main {
             width: 70%;
+            padding: 1em 1.5em;
             background-color: #fff;
             border-radius: 0.5em;
         }
 
         .sidebar {
             width: 30%;
+            margin-top: 0;
             margin-left: 1.5em;
             padding: 1.5em;
             background-color: #fff;
@@ -61,6 +67,13 @@
 
         .button-link + .button-link {
             margin-top: 1.5em;
+        }
+
+        .sponsor-link {
+            display: block;
+            color: #0072b0;
+            font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -84,6 +97,9 @@
             </a>
             <a href="/facebook" class="button-link">
                 follow us on Facebook
+            </a>
+            <a href="/sponsors" class="sponsor-link">
+                become a sponsor
             </a>
         </aside>
     </div>
