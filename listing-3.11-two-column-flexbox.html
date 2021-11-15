@@ -48,6 +48,20 @@
             background-color: #fff;
             border-radius: 0.5em;
         }
+
+        .button-link {
+            display: block;
+            padding: 0.5em;
+            color: #fff;
+            background-color: #0090C9;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .button-link + .button-link {
+            margin-top: 1.5em;
+        }
     </style>
 </head>
 
@@ -65,8 +79,12 @@
             </p>
         </main>
         <aside class="sidebar">
-            <div class="widget"></div>
-            <div class="widget"></div>
+            <a href="/twitter" class="button-link">
+                follow us on Twitter
+            </a>
+            <a href="/facebook" class="button-link">
+                follow us on Facebook
+            </a>
         </aside>
     </div>
 </body>
