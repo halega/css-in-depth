@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox example page</title>
+        <!-- <link href="listing-5.1-flexbox-layout.css" rel="stylesheet" type="text/css" /> -->
+        <style>
+            div {
+                border: 1px solid black;
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            .column-1, .column-2 {
+                flex-basis: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Ink</h1>
+            </header>
+
+            <main class="flex">
+                <div class="column-1 tile">
+                    <h1>Team collaboration done right</h1>
+                    <p>Thousands of teams from all over the world turn to <b>Ink</b>
+                        to communicate and get things done.</p>
+                </div>
+
+                <div class="column-2 tile">
+                    <h1>Team collaboration done right</h1>
+                    <p>Thousands of teams from all over the world turn to <b>Ink</b>
+                        to communicate and get things done.</p>
+                </div>
+
+                <div class="column-3 tile">
+                    <h1>Team collaboration done right</h1>
+                    <p>Thousands of teams from all over the world turn to <b>Ink</b>
+                        to communicate and get things done.</p>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
