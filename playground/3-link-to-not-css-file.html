@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This attribute is used to define the
+         type of the content linked to. The
+         value of the attribute should be 
+         a MIME type such as text/html, text/css,
+         and so on. The common use of this
+         attribute is to define the type of
+         stylesheet being referenced (such as text/css), 
+         but given that CSS is the only
+         stylesheet language used on the web,
+         not only is it possible to omit the
+         type attribute, but is actually
+         now recommended practice. -->
+    <title>External Style Sheet</title>
+    <!-- Defines red background -->
+    <link rel="stylesheet" href="3-style.css">
+    <!-- Defines yellow background -->
+    <link rel="stylesheet" href="3-style.foo">
+</head>
+
+<body>
+    <div>Do I have a red background from
+         the *.css external stylesheet?</div>
+</body>
+
+</html>
