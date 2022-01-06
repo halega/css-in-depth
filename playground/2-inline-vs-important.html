@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Specificity</title>
+    <style>
+        #main {
+            color: darkmagenta;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            /* Styles for a directly targeted element will always take
+               precedence over inherited styles, regardless of the specificity
+               of the inherited rule.  */
+            color: white;
+            background-color: hotpink;
+        }
+
+        .div {
+            background-color: khaki;
+        }
+
+        #div {
+            background-color: lightblue;
+        }
+
+        /* When an important rule is used on a style declaration,
+           this declaration overrides any other declarations. */
+        .important {
+            background-color: lightseagreen !important;
+        }
+
+        div.important {
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body id="main">
+    <!-- Inline styles added to an element (e.g., style="font-weight: bold;")
+         always overwrite any styles in external stylesheets, and thus can
+         be thought of as having the highest specificity. -->
+    <div id="div" class="div" style="background-color: green;">Background color?</div>
+    <div class="important" style="background-color: blue;">Background color?</div>
+    <!-- When two conflicting declarations with the !important rule are applied
+         to the same element, the declaration with a greater specificity will be applied. -->
+    <div class="important" style="background-color: blue !important;">Background color?</div>
+    <p>Hello, World!</p>
+</body>
+
+</html>
