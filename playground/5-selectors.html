@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        p.class-one.class-two {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        [class*="class-one"] {
+            color: darkorange;
+            font-size: 2em;
+        }
+
+        [class~="class-one"] {
+            color: darkgreen;
+        }
+
+        p[class$="class-one"] {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="class-two class-one">Contains two classes.</p>
+    <p class="class-one main">Only one class.</p>
+    <p class="class-one-class-two">Two concatenated classes.</p>
+</body>
+
+</html>
