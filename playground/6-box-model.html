@@ -40,9 +40,27 @@
 
         .container {
             width: 1000px;
-            margin: 100px auto;
+            margin: 10px auto;
             background-color: khaki;
             padding: 1em;
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding: 40px 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .big {
+            font-size: 1.8em;
+        }
+
+        .block {
+            display: inline-block;
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -64,6 +82,8 @@
         <!-- 3rd child div -->
         <div>Hello World</div>
     </div>
+
+    <p class="center">Hello <span class="highlight">world</span>, I am dem<span class="big">on</span>strating an <span class="highlight block">in<span class="big">li</span>ne</span> element.</p>
 </body>
 
 </html>
