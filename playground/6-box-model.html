@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>CSS Box Model</title>
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: inherit;
+        }
+
+        div:nth-child(1) {
+            background-color: chartreuse;
+            padding: 1em;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+        div:nth-child(2) {
+            background-color: cornsilk;
+            padding: 1em;
+            width: 200px;
+            border: 2px solid black;
+            margin-top: -15px;
+            margin-left: 50px;
+        }
+
+        div:nth-child(3) {
+            border: 2px solid black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 100px auto;
+            background-color: khaki;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1st child div -->
+    <div>Hello World</div>
+    <!-- 2nd child div -->
+    <div>Hello World</div>
+    <!-- 3rd child div -->
+    <div>Hello World</div>
+
+    <!-- 4th child div -->
+    <div class="container">
+        <!-- 1st child div -->
+        <div>Hello World</div>
+        <!-- 2nd child div -->
+        <div>Hello World</div>
+        <!-- 3rd child div -->
+        <div>Hello World</div>
+    </div>
+</body>
+
+</html>
