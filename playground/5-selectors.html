@@ -60,6 +60,25 @@
             text-decoration-line: overline;
             text-decoration-style: dotted;
         }
+
+        /* Pseudo-classes */
+
+        .inner:active {
+            color: darkorchid;
+        }
+
+        .outer:hover, .outer * + *:hover {
+            border: 2px dashed indianred;
+            cursor: grab;
+        }
+
+        .outer {
+            background-color: lemonchiffon;
+        }
+
+        .outer :first-child {
+            background-color: lavender;
+        }
     </style>
 </head>
 
@@ -71,7 +90,7 @@
     <hr>
     <header>
         <div class="outer">
-            Outer.
+            <p>Outer.</p>
             <div class="inner">Inner.</div>
             <div>Inner without class.</div>
         </div>
