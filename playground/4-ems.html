@@ -5,7 +5,13 @@
     <title>Ems and Rems</title>
     <style>
         :root {
-            font-size: 24pt;
+            font-size: 24px;
+            --spacing: 1.5em;
+        }
+
+        .container {
+            /* 24px * 2 (.rem) * 1.5 (--spacing) * 2 = 144px */
+            padding: calc(var(--spacing) * 2);
         }
 
         .em, .rem {
@@ -27,6 +33,20 @@
         .rem p {
             font-size: .5em;
         }
+
+        .header {
+            font-size: 24px;
+            padding: 0.5em;
+            border: 1px dashed gray;
+        }
+
+        .header li {
+            font-size: 0.75em;
+        }
+
+        .header li a {
+            font-size: 0.5em;
+        }
     </style>
 </head>
 
@@ -40,7 +60,9 @@
         </div>
     </article>
 
-    <article class="rem">
+    <hr>
+
+    <article class="container rem">
         <h1>rem</h1>
         <p>This is a body of the main article.</p>
         <div>
@@ -48,6 +70,18 @@
             Paragraph outside <code>&lt;p&gt;</code>.
         </div>
     </article>
+
+    <hr>
+
+    <main>
+        <div class="header">
+            Menu:
+            <ul>
+                <li>Navigation</li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </main>
 </body>
 
 </html>
