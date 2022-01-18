@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Inherit Global Value</title>
+    <style>
+        .foo {
+            color: blue;
+        }
+
+        .bar {
+            color: green;
+        }
+
+        p {
+            color: red;
+        }
+
+        .bar p {
+            color: unset;
+        }
+
+        h1 {
+            font-weight: initial;
+            font-size: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Inherit Global Value</h1>
+    <p>This text is red.</p>
+    <div class="foo">
+        <p>This text is also red.</p>
+    </div>
+    <div class="bar">
+        <p>This text is green (default inherited value).</p>
+    </div>
+</body>
+
+</html>
