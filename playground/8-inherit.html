@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Inherit Global Property</title>
+    <style>
+        div {
+            background-color: white;
+        }
+
+        .one {
+            color: yellowgreen;
+            background-color: darkblue;
+            border: 2px solid orangered;
+        }
+
+        .two {
+            background-color: inherit;
+            border: inherit;
+        }
+
+        .three {
+            color: darkred
+            /* border: inherit; */
+            /* background-color: inherit; */
+        }
+    </style>
+</head>
+
+<body>
+<div class="one">
+    Hello World (class = "one")
+    <div class="two">
+        Hello World (class = "two")
+        <div class="three">
+            Hello World (class = "three")
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
