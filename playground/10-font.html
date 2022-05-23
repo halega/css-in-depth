@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>font-size</title>
+    <style>
+        :root {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 24px;
+        }
+        .parent {
+            font-size: 1.5em;
+        }
+
+        .child {
+            font-size: 1.5em;
+        }
+
+        .grandchild {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        I'm the parent
+        <div class="child">
+            I'm the child
+            <div class="grandchild">
+                I'm the grandchild
+            </div>
+            <div class="child">
+                I'm child in child.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
