@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Overflow</title>
+    <style>
+        :root {
+            font-size: 24px;
+        }
+
+        .my-text {
+            width: 10rem;
+            border: 1px solid red;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-text">
+        Here is a really really long string.
+    </div>
+</body>
+
+</html>
