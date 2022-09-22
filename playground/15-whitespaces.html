@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>color</title>
+    <style>
+        :root {
+            /* font-size: 24px; */
+        }
+
+        div {
+            border: 3px solid currentColor;
+        }
+
+        .one {
+            color: red;
+        }
+
+        .two {
+            color: green;
+        }
+
+        pre {
+            border: 1px dotted black;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    Source text:
+    <pre><p>8-(495)-999-99-99, 8-(495)-999-99-98</p></pre>
+    Browser:
+    <p>8-(495)-999-99-99, 8-(495)-999-99-98</p>
+
+    Source text:
+    <pre>8-(495)-999-99-99,        8-(495)-999-99-98</pre>
+    Browser:
+    <p>8-(495)-999-99-99,         8-(495)-999-99-98</p>
+
+    Source text:
+    <pre>8-(495)-999-99-99,
+        
+        
+        8-(495)-999-99-98</pre>
+    Browser:
+    <p>8-(495)-999-99-99,
+        
+        
+        8-(495)-999-99-98</p>
+</body>
+
+</html>
