@@ -1,0 +1,15 @@
+div {
+	background-color: pink;
+	width: 250px;
+	padding-left: 1em;
+}
+
+.top {
+	position: absolute;
+	inset-block-start: 0;
+}
+
+.bottom {
+	position: absolute;
+	inset-block-end: 0;
+}
