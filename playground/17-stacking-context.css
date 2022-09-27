@@ -1,0 +1,39 @@
+div {
+	width: 400px;
+	height: 200px;
+}
+
+p {
+	margin: 1rem;
+	padding: 1rem;
+	height: 50px;
+	font: 1.2em "JetBrains Mono";
+}
+
+#f,
+#g {
+	position: absolute;
+}
+
+#f {
+	background: rgba(255, 193, 7, .9);
+	opacity: .99;
+}
+
+#f p {
+	background: rgb(34, 34, 34);
+	color: whitesmoke;
+	position: relative;
+	z-index: 1;
+}
+
+#g {
+	background: rgba(3, 169, 244, .7);
+	top: 50px;
+	left: 100px;
+}
+
+#g p {
+	border: 1px solid black;
+	text-align: right;
+}
