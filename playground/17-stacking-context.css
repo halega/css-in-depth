@@ -34,6 +34,10 @@ p {
 }
 
 #g p {
+	width: 130px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 	border: 1px solid black;
 	text-align: right;
 }
