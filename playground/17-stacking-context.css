@@ -1,43 +1,48 @@
-div {
-	width: 400px;
-	height: 200px;
+body {
+	margin: 40px;
 }
 
-p {
-	margin: 1rem;
-	padding: 1rem;
-	height: 50px;
-	font: 1.2em "JetBrains Mono";
+.box {
+	display: inline-block;
+	width: 200px;
+	line-height: 200px;
+	text-align: center;
+	border: 2px solid black;
+	background-color: #ea5;
+	margin-left: -60px;
+	vertical-align: top;
 }
 
-#f,
-#g {
-	position: absolute;
+.one {
+	margin-left: 0;
 }
 
-#f {
-	background: rgba(255, 193, 7, .9);
-	opacity: .99;
+.two {
+	margin-top: 30px;
 }
 
-#f p {
-	background: rgb(34, 34, 34);
-	color: whitesmoke;
+.three {
+	margin-top: 60px;
+}
+
+.positioned {
 	position: relative;
+	background-color: #5ae;
 	z-index: 1;
 }
 
-#g {
-	background: rgba(3, 169, 244, .7);
-	top: 50px;
-	left: 100px;
+.one {
+	z-index: 1;
 }
 
-#g p {
-	width: 130px;
+.absolute {
 	position: absolute;
-	bottom: 0;
-	right: 0;
-	border: 1px solid black;
-	text-align: right;
+	bottom: 1em;
+	right: 1em;
+	height: 2em;
+	background-color: #fff;
+	border: 2px dashed #888;
+	z-index: 100;
+	line-height: initial;
+	padding: 1em;
 }
